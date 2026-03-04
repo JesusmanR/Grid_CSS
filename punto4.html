@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylespto4.css">
+    <title>Punto 4</title>
+</head>
+
+<body>
+    <h1>Explorando el flujo y la densidad de la cuadrícula</h1>
+    <p>Analizar cómo varía la organización al cambiar el flujo de colocación de los ítems.</code>.</p>
+    <h2>Actividad:</h2>
+    <ul>
+        <li>Crea una cuadrícula con elementos de diferentes tamaños.</li>
+        <li>Experimenta con grid-auto-flow: row, column y dense.</li>
+        <li>Observa y documenta los cambios.</li>
+    </ul>
+
+    <h1>Solución:</h1>
+
+    <div class="contenedor">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+    </div>
+    <h1>Pregunta:</h1>
+    <p>¿En qué casos el flujo denso ayuda a optimizar el espacio del diseño?</p>
+    <ul>
+        <li><b>Útil para elementos de tamaños variables:</b> Cuando los ítems ocupan múltiples celdas (por ejemplo,
+            imágenes de diferentes proporciones), el flujo denso permite rellenar huecos vacíos que dejan los elementos
+            grandes.</li>
+        <li><b>Optimiza el espacio disponible:</b> Al buscar colocar elementos en espacios vacíos, se logra una
+            cuadrícula más compacta y sin áreas desperdiciadas.</li>
+        <li><b>Altera el orden visual:</b> El algoritmo dense no respeta estrictamente el orden del HTML, sino que
+            reordena los elementos para encajarlos en los huecos, priorizando el aprovechamiento del espacio.</li>
+        <li><b>Casos de uso ideales:</b> Galerías de imágenes, diseños tipo masonry, interfaces con contenido dinámico o
+            cualquier layout donde los elementos tengan dimensiones irregulares.</li>
+        <li><b>Precaución con el orden:</b> No recomendado cuando la secuencia lógica de los elementos es importante
+            (ej. pasos de un tutorial, líneas de tiempo), ya que puede desordenar la interpretación del contenido.</li>
+        <li><b>Comparación con flujo normal:</b> Mientras que row o column respetan el orden del HTML (dejando huecos si
+            es necesario), dense prioriza la densidad visual sobre el orden.</li>
+    </ul>
+</body>
+
+</html>

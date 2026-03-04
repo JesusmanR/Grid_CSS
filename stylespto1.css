@@ -1,0 +1,25 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.contenedor {
+    display: grid;
+    /* Define tres columnas y dos filas */
+    grid-template-columns: 150px 1fr 2fr; /* Columna fija, flexible y doble de flexible */
+    grid-template-rows: 100px auto;        /* Fila superior fija, segunda fila automática */
+
+    gap: 10px; /* Espacio entre celdas */
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 5px;
+}
